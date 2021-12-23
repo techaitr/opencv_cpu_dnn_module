@@ -1,0 +1,4 @@
+<launch>
+        <rosparam file="$(find opencv_dnn_object_detector_ros)/config/opencv_dnn_object_detector_ros.yaml" command="load" />
+        <node pkg="opencv_dnn_object_detector_ros" name="yolov4_people_detector" type="opencv_dnn_object_detector_ros" output="screen" />
+</launch>

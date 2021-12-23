@@ -1,0 +1,19 @@
+formatName: darknet
+modelClassName: coco.names
+COCONamesFilePath: /input/data/
+CONFIDENCE_THRESHOLD: 0.5
+NMS_THRESHOLD: 0.4
+NUM_CLASSES: 80
+stopDetection: false
+darknet:
+  inputWidthYOLO: 416 
+  inputHeightYOLO: 416 
+  modelCfgName: yolov4-tiny.cfg
+  modelWeightsName: yolov4-tiny.weights
+  cfgFilePath: /input/cfg/
+  weightsFilePath: /input/
+tensorflow:
+  inputWidthTensorflow: 300 
+  inputHeightTensorflow: 300 
+  frozenInferenceGraphName: frozen_inference_graph.pb;
+  modelTensorflowPbtxtName: ssd_mobilenetSinan.pbtxt;
